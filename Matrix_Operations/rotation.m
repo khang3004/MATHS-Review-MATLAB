@@ -1,0 +1,13 @@
+% 1. Define a vector x (point in 2D space)
+x = [1; 0]; % Point at (1,0)
+% 2. Define a Transformation Matrix A (Rotation 90º couter-wise)
+theta = pi/2; 
+A = [cos(theta) -sin(theta);
+    sin(theta) cos(theta)];
+
+%3. Apply transformation (mapping)
+b = A * x;
+
+disp("Original Vector x:"); disp(x);
+disp('Transformed Vector b (New position):'), disp(b);
+%Result should be
